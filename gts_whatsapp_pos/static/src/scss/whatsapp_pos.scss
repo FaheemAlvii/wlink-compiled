@@ -1,0 +1,79 @@
+.receipt-screen {
+    .default-view .actions .send-whatsapp {
+        display: flex;
+
+        .input-whatsapp {
+            display: flex;
+            flex: 1;
+            background: white;
+            border-top-left-radius: 0.25rem !important;
+            border-bottom-left-radius: 0.25rem !important;
+            border: none;
+        }
+
+        input {
+            flex: 1;
+            padding-left: 1rem;
+            border-top-left-radius: 0.25rem !important;
+            border-bottom-left-radius: 0.25rem !important;
+            border: solid 1px rgb(206, 212, 218);
+            color: $gray-700;
+        }
+
+        input:focus {
+            outline: none !important;
+            border: solid 1px $primary !important;
+        }
+
+        input:focus + button.highlight {
+            -webkit-box-shadow: inset 5px 0px 0px 0px lighten(rgba(113, 99, 158, 1), 10%) !important;
+            -moz-box-shadow: inset 5px 0px 0px 0px lighten(rgba(113, 99, 158, 1), 10%) !important;
+            box-shadow: inset 5px 0px 0px 0px lighten(rgba(113, 99, 158, 1), 10%) !important;
+        }
+
+        button {
+            &.send {
+                padding: 1rem 44px;
+
+                border: none;
+                border-top-right-radius: 0.25rem;
+                border-bottom-right-radius: 0.25rem;
+
+                background: rgb(248, 249, 250);
+                color: $gray-500;
+
+                &:not(.highlight) {
+                    cursor: not-allowed;
+                }
+
+                &.highlight {
+                    color: white;
+                    background-color: $primary;
+                }
+            }
+
+            i {
+                width: 25px;
+            }
+        }
+    }
+
+    .whatsapp-notice {
+        margin-top: 6px;
+        display: flex;
+
+        .send-whatsapp-info {
+            width: 100%;
+            text-align: right;
+            font-style: italic;
+        }
+
+        .failed {
+            color: rgb(168, 89, 89);
+        }
+
+        .successful {
+            color: $primary;
+        }
+    }
+}

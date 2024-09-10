@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <menuitem id="whatsapp_root_base_label" name="Whatsapp" parent="base.menu_custom" sequence="10000"/>
+
+    <menuitem id="whatsapp_root_menu" name="Whatsapp Connections" action="action_whatsapp_connection" parent="whatsapp_root_base_label"/>
+</odoo>

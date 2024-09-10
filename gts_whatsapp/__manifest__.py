@@ -1,0 +1,15 @@
+{
+    'name': 'Whatsapp API Handler',
+    'author': 'WLink',
+    'license': 'LGPL-3',
+    'version': '17.0.1.0',
+    'depends': ['mail'],
+    'data': [
+        'security/ir.model.access.csv',
+        'views/connections.xml',
+        'wizard/login_menu.xml',
+
+        'views/menu.xml'
+    ],
+    'installable': True,
+}
