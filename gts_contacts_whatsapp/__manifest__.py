@@ -1,5 +1,5 @@
 {
-    'name': 'Whatsapp Messaging for Contacts',
+    'name': 'Qr Whatsapp in Contacts app',
     'description': 'static/description/index.html',
     'author': 'WLink',
     'license': 'LGPL-3',
