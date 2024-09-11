@@ -1,5 +1,5 @@
 {
-    'name': 'Whatsapp Messaging for POS',
+    'name': 'Qr Whatsapp POS Receipts',
     'description':'static/description/index.html',
     'author': 'WLink',
     'license': 'LGPL-3',
