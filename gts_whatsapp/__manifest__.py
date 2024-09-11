@@ -4,6 +4,7 @@
     'license': 'LGPL-3',
     'version': '17.0.1.0',
     'depends': ['mail'],
+    'description':'static/description/index.html',
     'data': [
         'security/ir.model.access.csv',
         'views/connections.xml',
