@@ -6,6 +6,8 @@
     'version': '17.0.1.0',   
     'depends': ['gts_whatsapp', 'gts_contacts_whatsapp', 'point_of_sale', 'account'],
     'images': ['static/description/banner.png'],
+    'price':0,
+    'currency':'USD',
     # gts_contacts_whatsapp to re-use the messaging menu.
     'data': [
         # TODO: Security and icon
