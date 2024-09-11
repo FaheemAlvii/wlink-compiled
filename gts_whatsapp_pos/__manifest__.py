@@ -1,6 +1,6 @@
 {
     'name': 'Whatsapp Messaging for POS',
-    'description': "Adds whatsapp integration to the Point of Sale app.",
+    'description':'static/description/index.html',
     'author': 'WLink',
     'license': 'LGPL-3',
     'version': '17.0.1.0',
