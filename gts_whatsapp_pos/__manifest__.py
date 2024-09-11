@@ -3,9 +3,7 @@
     'description':'static/description/index.html',
     'author': 'WLink',
     'license': 'LGPL-3',
-    'version': '17.0.1.0',
-    'price':'0',
-    'currency':'usd',    
+    'version': '17.0.1.0',   
     'depends': ['gts_whatsapp', 'gts_contacts_whatsapp', 'point_of_sale', 'account'],
     # gts_contacts_whatsapp to re-use the messaging menu.
     'data': [
