@@ -1,5 +1,5 @@
 {
-    'name': 'Whatsapp Messaging for most apps',
+    'name': 'Qr WhatsApp Document Send',
     'description':'static/description/index.html',
     'author': 'WLink',
     'license': 'LGPL-3',
