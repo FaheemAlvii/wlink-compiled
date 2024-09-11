@@ -1,6 +1,6 @@
 {
     'name': 'Whatsapp Messaging for most apps',
-    'description': "Adds whatsapp integration to most common modules except for `Point of Sale`.",
+    'description':'static/description/index.html',
     'author': 'WLink',
     'license': 'LGPL-3',
     'version': '17.0.1.0',

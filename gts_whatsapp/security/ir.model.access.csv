@@ -1,3 +1,0 @@
-id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
-gts_whatsapp.access_whatsapp_connection,access_whatsapp_connection,gts_whatsapp.model_whatsapp_connection,base.group_user,1,1,1,1
-gts_whatsapp.access_whatsapp_login_menu,access_whatsapp_login_menu,gts_whatsapp.model_whatsapp_login_menu,base.group_user,1,1,1,1
