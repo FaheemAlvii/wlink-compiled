@@ -4,6 +4,7 @@
     'author': 'WLink',
     'license': 'LGPL-3',
     'version': '17.0.1.0',
+    'website':'https://wlink.geektechsol.com',
     'depends': ['gts_whatsapp', 'contacts', 'sale'],
     'images': ['static/description/banner.png',],
     'data': [
