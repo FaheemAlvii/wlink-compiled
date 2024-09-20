@@ -1,0 +1,2 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_whatsapp_contacts_messaging_menu_inventory_user,whatsapp_contacts.messaging_menu.inventory user,model_whatsapp_contacts_messaging_menu_inventory,base.group_user,1,1,1,1
