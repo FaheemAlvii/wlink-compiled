@@ -4,6 +4,8 @@
     'description': 'static/description/index.html',
     'license': 'LGPL-3',
     'version': '16.0.1.0.0',
+    'website':'https://wlink.geektechsol.com',
+    'images': ['static/description/banner.png',],
     'depends': ['gts_whatsapp', 'gts_contacts_whatsapp', 'point_of_sale', 'account'],
     # gts_contacts_whatsapp to re-use the messaging menu.
     'data': [
