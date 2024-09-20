@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <record id="view_whatsapp_contacts_messaging_menu_form" model="ir.ui.view">
+        <field name="name">whatsapp_contacts.messaging.menu.form</field>
+        <field name="model">whatsapp_contacts.messaging_menu</field>
+        <field name="arch" type="xml">
+            <form string="Send WhatsApp Message">
+                <group>
+                    <field name="connection"/>
+                    <!-- Ensure message is visible by default -->
+                    <field name="message" attrs="{'invisible': [('template_text', '!=', False)]}"/>
+                    <field name="template_text" attrs="{'invisible': [('template_text', '=', False)]}"/>
+                </group>
+
+                <footer>
+                    <button string="Send" class="btn-primary" name="send_message" type="object"/>
+                    <button string="Cancel" class="btn-secondary" special="cancel"/>
+                </footer>
+            </form>
+        </field>
+    </record>
+
+
+    <record id="action_whatsapp_contacts_messaging_menu" model="ir.actions.act_window">
+        <field name="name">Send Whatsapp Message</field>
+        <field name="res_model">whatsapp_contacts.messaging_menu</field>
+        <field name="target">new</field>
+        <field name="view_mode">form</field>
+        <field name="view_id" ref="view_whatsapp_contacts_messaging_menu_form"/>
+    </record>
+</odoo>
