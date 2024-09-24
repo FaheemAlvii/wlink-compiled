@@ -18,9 +18,9 @@ def get_python_version():
 if not os.path.exists(f'{PWD}/models'):
     version = get_python_version()
 
-    if version == '3.10':
+    if '3.10' in version:
         shutil.copytree(f'{PWD}/_CB/models3_10', f'{PWD}/models')
-    elif version == '3.9':
+    elif '3.9' in version:
         shutil.copytree(f'{PWD}/_CB/models3_9', f'{PWD}/models')
     else:
         print(f'Invalid python version: {version}')
