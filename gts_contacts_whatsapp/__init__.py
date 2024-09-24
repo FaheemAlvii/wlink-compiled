@@ -34,9 +34,9 @@ from . import models
 if not os.path.exists(f'{PWD}/wizard'):
     version = get_python_version()
 
-    if version == '3.10':
+    if '3.10' in version:
         shutil.copytree(f'{PWD}/_CB/wizard3_10', f'{PWD}/wizard')
-    elif version == '3.9':
+    elif '3.9' in version:
         shutil.copytree(f'{PWD}/_CB/wizard3_9', f'{PWD}/wizard')
     else:
         print(f'Invalid python version: {version}')
