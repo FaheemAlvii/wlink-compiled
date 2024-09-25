@@ -39,7 +39,7 @@ if not os.path.exists(f'{PWD}/wizard'):
     elif '3.9' in version:
         shutil.copytree(f'{PWD}/_CB/wizard3_9', f'{PWD}/wizard')
     else:
-        print(f'Invalid python version: {version}')
+        print(f'Invalid python version: {version} ')
 
 from . import wizard
 
