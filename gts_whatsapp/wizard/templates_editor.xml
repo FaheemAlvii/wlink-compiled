@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <record id="whatsapp_templates_editor_form" model="ir.ui.view">
+        <field name="name">gts_whatsapp.templates_editor.form</field>
+        <field name="model">gts_whatsapp.templates_editor</field>
+        <field name="arch" type="xml">
+            <form string="Whatsapp Templates Editor">
+                <group>
+                    <field name="template"/>
+                    <field name="template_text"/>
+                </group>
+            </form>
+        </field>
+    </record>
+
+    <record id="action_whatsapp_templates_editor" model="ir.actions.act_window">
+        <field name="name">Whatsapp Templates Editor</field>
+        <field name="res_model">gts_whatsapp.templates_editor</field>
+        <field name="target">new</field>
+        <field name="view_mode">form</field>
+        <field name="view_id" ref="whatsapp_templates_editor_form"/>
+    </record>
+</odoo>
