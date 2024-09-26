@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates id="template" xml:space="preserve">
+    <t t-inherit="point_of_sale.PaymentScreenButtons" t-inherit-mode="extension">
+<!--        <xpath expr="//div" position="inside">-->
+<!--            <button id="my_button" class="button js_invoice">-->
+<!--                <i class="fa fa-spinner fa-spin"/>-->
+<!--                Click me-->
+<!--            </button>-->
+<!--        </xpath>-->
+    </t>
+</templates>
