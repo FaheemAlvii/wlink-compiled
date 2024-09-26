@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<templates id="template" xml:space="preserve">
+
+    <t t-name="gts_whatsapp_pos.ReceiptScreen" t-inherit="point_of_sale.ReceiptScreen" t-inherit-mode="extension">
+        <xpath expr="//form[hasclass('send-email')]" position="after">
+            <form class="mt-4 send-whatsapp">
+                <div class="input-whatsapp" t-on-submit.prevent="onSendWhatsapp">
+                    <input type="tel" class="input-email" placeholder="Whatsapp: Receipt" t-model="this.inputWhatsapp" t-on-input="onInputWhatsapp"/>
+                    <button class="send highlight" t-on-click="onSendWhatsapp" t-att-class="{ highlight: !this.whatsappButtonDisabled }" type="submit">
+                        <i class="fa" t-att-class="this.isSending ? 'fa-fw fa-spin fa-circle-o-notch' : 'fa-solid fa-whatsapp'" aria-hidden="true"/>
+                    </button>
+                </div>
+            </form>
+
+            <div>
+                <p style="margin: 7px; font-size: 17px; ">Enter your message.</p>
+            </div>
+
+            <div>
+                <textarea style="box-shadow: 0px 0px 0px 1px gainsboro inset !important; border-radius: 0 !important;" id="input_whatsapp" rows="2" cols="100" placeholder="Message" t-model="this.inputMessage" t-ref="input" name="note"></textarea>
+            </div>
+        </xpath>
+    </t>
+</templates>
