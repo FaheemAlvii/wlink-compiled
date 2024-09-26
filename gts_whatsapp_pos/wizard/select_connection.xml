@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <record id="gts_whatsapp_pos_select_connection_form" model="ir.ui.view">
+        <field name="name">gts_whatsapp_pos.select_connection.form</field>
+        <field name="model">gts_whatsapp_pos.select_connection</field>
+        <field name="arch" type="xml">
+            <form string="Send WhatsApp Message">
+                <group>
+                    <field name="connection"/>
+                </group>
+            </form>
+        </field>
+    </record>
+
+    <record id="gts_whatsapp_pos_select_connection_action" model="ir.actions.act_window">
+        <field name="name">Select Whatsapp Connection</field>
+        <field name="res_model">gts_whatsapp_pos.select_connection</field>
+        <field name="target">new</field>
+        <field name="view_mode">form</field>
+        <field name="view_id" ref="gts_whatsapp_pos_select_connection_form"/>
+    </record>
+
+    <record id="gts_whatsapp_pos_view_pos_config_kanban" model="ir.ui.view">
+        <field name="name">pos.config.form</field>
+        <field name="model">pos.config</field>
+        <field name="inherit_id" ref="point_of_sale.view_pos_config_kanban"/>
+        <field name="arch" type="xml">
+            <xpath expr="//kanban[@create='false' and @class='o_kanban_dashboard o_pos_kanban']/templates/t[@t-name='kanban-box']/div/div[@class='container o_kanban_card_manage_pane dropdown-menu']/div/div[@class='col-6 o_kanban_card_manage_section o_kanban_manage_new']" position="inside">
+                <div role="menuitem" class="o_kanban_card_manage_title">
+                    <span>Whatsapp</span>
+                </div>
+
+                <div role="menuitem">
+                    <a name="gts_whatsapp_pos.gts_whatsapp_pos_select_connection_action" type="action">Connection</a>
+                </div>
+            </xpath>
+        </field>
+    </record>
+</odoo>
