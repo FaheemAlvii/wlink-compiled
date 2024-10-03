@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <record id="view_whatsapp_contacts_messaging_menu_inventory_form" model="ir.ui.view">
+        <field name="name">whatsapp_contacts.messaging_menu.inventory.form</field>
+        <field name="model">whatsapp_contacts.messaging_menu.inventory</field>
+        <field name="arch" type="xml">
+            <form string="Send WhatsApp Message">
+                <group>
+                    <field name="connection"/>
+                    <field name="selected_document"/>
+                    <field name="message"/>
+                </group>
+                <footer>
+                    <button string="Send" class="btn-primary" name="send_message" type="object"/>
+                    <button string="Cancel" class="btn-secondary" special="cancel"/>
+                </footer>
+            </form>
+        </field>
+    </record>
+
+    <record id="action_whatsapp_contacts_messaging_menu" model="ir.actions.act_window">
+        <field name="name">Send Whatsapp Message</field>
+        <field name="res_model">whatsapp_contacts.messaging_menu</field>
+        <field name="target">new</field>
+        <field name="view_mode">form</field>
+        <field name="view_id" ref="view_whatsapp_contacts_messaging_menu_inventory_form"/>
+    </record>
+</odoo>
