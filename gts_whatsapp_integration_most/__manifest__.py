@@ -5,7 +5,7 @@
     'license': 'LGPL-3',
     'version': '16.0.1.0',
     'website':'https://wlink.geektechsol.com',
-    'images': ['static/description/banner.png',],
+    'images': ['static/description/banner_docs.png',],
     'depends': ['gts_whatsapp', 'stock', 'purchase', 'account', 'sale', 'gts_contacts_whatsapp'],
     'data': [
         'security/ir.model.access.csv',
