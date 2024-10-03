@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <record model="ir.ui.view" id="wi_inventory">
+        <field name="name">wi_whatsapp_inventory</field>
+        <field name="model">stock.picking</field>
+        <field name="inherit_id" ref="stock.view_picking_form"></field>
+        <field name="arch" type="xml">
+            <xpath expr="//form/header/button[@name='button_validate']" position="after">
+                <button string="Send By Whatsapp" icon="fa-whatsapp" name="whatsapp_template_message" type="object"/>
+                <button string="Message" icon="fa-whatsapp" name="whatsapp_direct_message" type="object"/>
+            </xpath>
+        </field>
+    </record>
+</odoo>

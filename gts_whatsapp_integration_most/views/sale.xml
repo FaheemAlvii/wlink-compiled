@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <record model="ir.ui.view" id="wi_sale_order">
+        <field name="name">wi_whatsapp_sale_order</field>
+        <field name="model">sale.order</field>
+        <field name="inherit_id" ref="sale.view_order_form"></field>
+        <field name="arch" type="xml">
+            <!-- Cant insert inside header as that makes the button really long. -->
+            <xpath expr="//form/header/button[@id='action_confirm']" position="after">
+                <button string="Send By Whatsapp" icon="fa-whatsapp" name="whatsapp_template_message" type="object"/>
+                <button string="Message" icon="fa-whatsapp" name="whatsapp_direct_message" type="object"/>
+            </xpath>
+        </field>
+    </record>
+</odoo>
